@@ -1,0 +1,581 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Metodologia da Pesquisa Científica</title>
+<link href="css/impressao.css" type="text/css" rel="stylesheet"
+	media="print" />
+<link href="css/grid.css" type="text/css" rel="stylesheet"
+	media="screen" />
+<link href="css/vtip.css" type="text/css" rel="stylesheet"
+	media="screen" />
+<link href="js/fancybox/jquery.fancybox-1.3.4.css" type="text/css"
+	rel="stylesheet" media="screen" />
+<link href="css/smoothness/jquery-ui-1.8.11.custom.css" type="text/css"
+	rel="stylesheet" media="screen" />
+<link href="css/layout.css" type="text/css" rel="stylesheet"
+	media="screen" />
+<link href="css/tema.css" type="text/css" rel="stylesheet"
+	media="screen" />
+<link href="css/formularios.css" type="text/css" rel="stylesheet"
+	media="screen" />
+
+<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.12.custom.min.js"></script>
+<script type="text/javascript"
+	src="js/fancybox/jquery.fancybox-1.3.4.js"></script>
+<script type="text/javascript" src="js/jquery.scrollTo-min.js"></script>
+<script type="text/javascript" src="js/jquery.serialScroll-min.js"></script>
+<script type="text/javascript" src="js/jquery.coda-slider-2.0.js"></script>
+<script type="text/javascript" src="js/ufc.js"></script>
+<script type="text/javascript" src="js/vtip.js"></script>
+<script type="text/javascript" src="js/fluidtextresizer.js"></script>
+<script type="text/javascript" src="js/jquery.simpleSlide_min.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+<script type="text/javascript" src="js/jquery.jcarousel.autoscroll.js"></script>
+<script type="text/javascript" src="flash/jwplayer/jwplayer.html5.js"></script>
+<script type="text/javascript" src="flash/jwplayer/jwplayer.js"></script>
+<script src="js/jcanvas.min.js" language="javascript"></script>
+<script src="js/criarCanvas.js" language="javascript"></script>
+<script src="js/animarBaloes.js" language="javascript"></script>
+<script src="js/f1.js" language="javascript"></script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function() {
+
+	});
+	var redimensionarFonte = new fluidtextresizer({
+		controlsdiv : "sizecontroldiv", //id of special div containing your resize controls. Enter "" if not defined
+		targets : [ "p", "li", "h1", "h2", "h3", "tr", ".slideshow" ], //.generic p, li, .quadro p, h2, h3 - target elements to resize text within: ["selector1", "selector2", etc]
+		levels : 1, //number of levels users can magnify (or shrink) text
+		persist : "none", //enter "session" or "none"
+		animate : 200
+	//animation duration of text resize. Enter 0 to disable
+	})
+</script>
+<style type="text/css" media="screen">
+</style>
+<!--[if IE 7]>
+	<style type="text/css" media="screen">
+		#nav > li > ul > li {
+			margin-left:-15px;
+			width:230px;
+		}
+		.audio-player-toolbar > button {
+			float:left;
+			display:block;
+			background-color:white;
+		}
+		.audio-progressbar {
+			width:100px !important;
+			display:block;
+			float:left;
+			margin-left:5px;
+			margin-top:2px;
+		}
+	</style>
+	<![endif]-->
+</head>
+<body>
+	<div class="linha" id="cabecalho">
+		<div class="titulos">
+			<h1 style="font-style: italic;">A Química no nosso dia a dia</h1>
+
+		</div>
+	</div>
+	<div class="linha" id="navegacao">
+		<ul id="nav" class="coluna lateral">
+			<li id="nav-menu"><a href="#"><img
+					src="layout/menu-menu.png" width="20" height="20" alt="Menu" /></a>
+				<ul>
+					<li><a href="orientacoes.html">Orientações de Navegação</a></li>
+					<li><a href="01.html">Apresentação</a></li>
+					<li><a href="02.html">Tópico 01: Introdução</a></li>
+					<li><a href="03.html">Tópico 02: Ciência</a></li>
+					<li><a href="04.html">Tópico 03: O Método Científico</a></li>
+					<li><a href="05.html">Tópico 04: Atividades</a></li>
+
+				</ul></li>
+			<li><a href="02.html"><img
+					src="layout/menu-anterior.png" width="20" height="20"
+					alt="Tópico Anterior" title="Tópico Anterior" class="mouseover" /></a></li>
+			<li><a href="04.html"><img src="layout/menu-proximo.png"
+					width="20" height="20" alt="Próximo Tópico" title="Próximo Tópico"
+					class="mouseover" /></a></li>
+			<li><a
+				href="javascript:redimensionarFonte.setFontLevel('smaller')"><img
+					src="layout/menu-fonte_reduzir.png" width="20" height="20"
+					alt="Reduzir Fonte" title="Reduzir Fonte" class="mouseover" /></a></li>
+			<li><a
+				href="javascript:redimensionarFonte.setFontLevel('bigger')"><img
+					src="layout/menu-fonte_aumentar.png" width="20" height="20"
+					alt="Aumentar Fonte" title="Aumentar Fonte" class="mouseover" /></a></li>
+			<li><a href="#" id="menu_constrate"><img
+					src="layout/menu-contraste.png" width="20" height="20"
+					alt="Contraste" title="Contraste" class="mouseover" /></a></li>
+
+			<li><a href="pdf/01.pdf" target="_blank"><img
+					src="layout/menu-impressao.png" width="20" height="20"
+					alt="Versão para Impressão" title="Versão para Impressão"
+					class="mouseover" /></a></li>
+		</ul>
+		<div id="topico" class="coluna principal">
+			<h2>Tópico 02: No ar que respiramos tem química?</h2>
+		</div>
+	</div>
+
+	<br />
+	<!-- TÓPICO 2 -  CIÊNCIA -->
+	</div>
+	</div>
+	<div class="linha">
+		<div class="coluna lateral">
+			<br />
+		</div>
+		<div class="coluna principal">
+			<h2>TÓPICO: CIÊNCIA</h2>
+			<h3>
+				<b>Definição Etimológica</b>
+			</h3>
+			<p>Latin Scire, que significa aprender, conhecer</p>
+
+		</div>
+	</div>
+
+	<div class="linha">
+		<div class="coluna lateral">
+			<img src="imagens/01/pensar.png" />
+		</div>
+		<div class="coluna principal">
+			<div class="destaque">
+				<p>E qual a diferença de Ciência para outras atividades também
+					envolvidas com o aprendizado e o conhecimento?</p>
+				<br />
+				<p>Segundo Trujillo Ferrari (1974), ciência é todo um conjunto
+					de atitudes e de atividades racionais, dirigida ao sistemático
+					conhecimento com objetivo limitado, capaz de ser submetido à
+					verificação.</p>
+				<br />
+				<p>Lakatos e Marconi (2007, p. 80) acrescentam que, além der ser
+					“uma sistematização de conhecimentos”, ciência é “um conjunto de
+					proposições logicamente correlacionadas sobre o comportamento de
+					certos fenômenos que se deseja estudar.”</p>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="linha">
+		<div class="coluna lateral">
+			<img src="imagens/01/pergunta.png" />
+		</div>
+		<div class="coluna principal">
+			<div class="destaque">
+				<p>Contudo, ainda restam dúvidas: QUAL SÃO AS TAREFAS DA
+					CIÊNCIA?</p>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="linha">
+		<div class="coluna lateral">
+			<br />
+		</div>
+		<div class="coluna principal">
+			<h2>Efeito Capsula Dinâmica: Início do Efeito</h2>
+
+
+			<p style="text-align: left;">
+				a) aumento e melhoria do conhecimento;<br /> b)descoberta de novos
+				fatos ou fenômenos;<br /> c) aproveitamento espiritual do
+				conhecimento na supressão de falsos milagres, mistérios e
+				superstições;<br /> d) aproveitamento material do conhecimento
+				visando à melhoria da condição de vida humana;<br /> e)
+				estabelecimento de certo tipo de controle sobre a natureza.<br />
+			</p>
+			<h2>Efeito Capsula Dinâmica: Fim do Efeito</h2>
+		</div>
+	</div>
+
+
+	<div class="linha">
+		<div class="coluna lateral">
+			<br />
+		</div>
+		<div class="coluna principal">
+			<h3>E o que não é ciência?</h3>
+			<p>Demo (2000, p. 22), em contrapartida, acredita que “no campo
+				científico é sempre mais fácil apontarmos o que as coisas não são,
+				razão pela qual podemos começar dizendo o que o conhecimento
+				científico não é.”</p>
+		</div>
+	</div>
+
+	<div class="linha">
+		<div class="coluna lateral">
+			<img src="imagens/01/exclamacao.png" />
+		</div>
+		<div class="coluna principal ">
+			<div class="destaque">
+				<h3>Vamos analisar o tópico?</h3>
+				<br />
+			</div>
+
+		</div>
+	</div>
+
+
+	<div class="linha">
+		<div class="coluna lateral">
+			<br />
+		</div>
+		<div class="coluna principal ">
+			<div class="descricao retratil">
+				<h3>
+					<a href="#retratil" class="retratil_ativar">Tópico a</a>
+				</h3>
+				<div class="retratil_conteudo">
+
+					<p style="text-indent: 0em">
+						NÃO É SENSO COMUM (Conhecimento popular, vulgar ou senso comum)<br />
+						“Aceitação não problematizada, muitas vezes crédula, do que
+						afirmamos ou temos por válido.” (FEEVALE, 2013, P. 15)<br /> Ou
+						seja, há uma espécie de “familiaridade” com alguma coisa, como
+						resultado de experiências pessoais ou suposições. O senso comum
+						apresenta as seguintes características:<br /> • SUPERFICIAL, isto
+						é, conforma-se com a aparência; expressa-se por frases como
+						“porque o vi”, “porque o senti”, “porque o disseram”, “porque todo
+						mundo diz”.<br /> <br /> <label style="text-align: center;">A
+							CIÊNCIA NÃO ADMITE ESSE TIPO DE INDAGAÇÃO!</label><br /> <br /> •
+						SENSITIVO, ou seja, referente a vivências, estados de ânimo e
+						emoções da vida diária;<br /> • SUBJETIVO, pois é o próprio
+						sujeito que organiza suas experiências e conhecimentos, seja
+						adquirida por suas próprias vivências, quanto pelo “ouvi dizer”;<br />
+						• ASSISTEMÁTICO, pois esta “organização” das experiências não visa
+						a uma sistematização, nem na forma de adquiri-las, nem há
+						tentativa de validá-las;<br /> • ACRÍTICO, ou seja, não há uma
+						crítica, uma análise aprofundada sobre o assunto, como requer o
+						conhecimento científico. (Lakatos e Marconi, 2007, p. 77)<br />
+					</p>
+					<br /> <img src="imagens/01/sensocomum.png" />
+					<h4 align="center">Imagem:
+						http://afilosofia.no.sapo.pt/SComum.htm</h4>
+					<br />
+
+
+				</div>
+			</div>
+
+
+		</div>
+
+
+	</div>
+	<div class="linha">
+		<div class="coluna lateral">
+			<br />
+		</div>
+		<div class="coluna principal ">
+			<div class="descricao retratil">
+				<h3>
+					<a href="#retratil" class="retratil_ativar">Tópico b</a>
+				</h3>
+				<div class="retratil_conteudo">
+
+					<p style="text-indent: 0em">b) Não é sabedoria ou bom-senso:
+						pois estes “[...] apreciam componentes como convivência e
+						intuição.” (PRODANOV, 2013, p. 15). Elas são qualidades pessoais e
+						raras, que aumenta com a idade, pois é uma forma avançada de
+						conhecimento, que une o emocional e cognitivo, alimentado pela
+						experiência.</p>
+
+
+
+
+				</div>
+			</div>
+
+
+		</div>
+
+
+	</div>
+	<div class="linha">
+		<div class="coluna lateral">
+			<br />
+		</div>
+		<div class="coluna principal ">
+			<div class="descricao retratil">
+				<h3>
+					<a href="#retratil" class="retratil_ativar">Tópico c</a>
+				</h3>
+				<div class="retratil_conteudo">
+
+					<p style="text-indent: 0em">c) Não é ideologia – porque esta
+						não tem como alvo central tratar a realidade, mas justificar
+						posição política, produzir discurso marcado pela justificação.</p>
+
+
+
+
+				</div>
+			</div>
+
+
+		</div>
+
+
+	</div>
+
+	<br />
+	<br />
+	<br />
+
+
+	<div class="linha">
+		<div class="coluna lateral">
+			<img src="imagens/01/pensar.png" />
+		</div>
+		<div class="coluna principal ">
+			<div class="destaque">
+				<p>“O grau mais elevado da sabedoria humana é saber adaptar o
+					seu caráter às circunstâncias e ficar interiormente calmo apesar
+					das tempestades exteriores.” (Daniel Defoe)</p>
+
+
+			</div>
+		</div>
+	</div>
+
+	<div class="linha">
+		<div class="coluna lateral">
+			<img src="imagens/01/filme.png" />
+		</div>
+		<div class="coluna principal ">
+			<div class="destaque">
+				<p>SUGESTÃO DE FILME: V de Vingança Um filme de James McTeigue
+					com Natalie Portman, Hugo Weaving. Em uma Inglaterra do futuro,
+					onde está em vigor um regime totalitário, vive Evey Hammond
+					(Natalie Portman). Ela é salva de uma situação de vida ou morte por
+					um homem mascarado, conhecido apenas pelo codinome V (Hugo
+					Weaving), que é extremamente carismático e habilidoso na arte do
+					combate e da destruição. Ao convocar seus compatriotas a se rebelar
+					contra a tirania e a opressão do governo inglês, V provoca uma
+					verdadeira revolução. Enquanto Evey tenta saber mais sobre o
+					passado de V, ela termina por descobrir quem é e seu papel no plano
+					de seu salvador para trazer liberdade e justiça ao país.</p>
+			</div>
+
+			<img src="imagens/01/dialogo.png" />
+			<h4 align="center">Imagem:
+				http://3.bp.blogspot.com/-gIxyOK5wWBw/UQGfOWus--I/AAAAAAAAAO4/4twpdnvNFPE/s1600/Poder_M%C3%ADdia.jpg</h4>
+		</div>
+	</div>
+
+	<br />
+
+	<div class="linha">
+		<div class="coluna lateral">
+			<img src="imagens/01/pergunta.png" />
+		</div>
+		<div class="coluna principal ">
+			<div class="destaque">
+				<p style="text-indent: 0em">
+					QUAL A SUA IDEOLOGIA? Faça o teste!<br />
+					http://www1.folha.uol.com.br/infograficos/2013/10/78574-qual-e-a-sua-ideologia.shtml
+				</p>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="linha">
+		<div class="coluna lateral">
+			<br />
+		</div>
+		<div class="coluna principal ">
+			<h2>Características da Ciência: Critérios de Cientificidade</h2>
+			<p>De acordo com Demo (2000), cientista é quem duvida do que vê,
+				se diz, aparece e, ao mesmo tempo, não acredita poder afirmar algo
+				com certeza absoluta. É comum e mais fácil tudo criticar e pensar
+				que podemos oferecer algo já não criticável.</p>
+		</div>
+	</div>
+	<br />
+	<div class="linha">
+		<div class="coluna lateral">
+			<img src="imagens/01/pensar.png" />
+		</div>
+		<div class="coluna principal ">
+			<div class="destaque">
+				<p>“[...] o conhecimento científico não produz certezas, mas
+					fragilidades mais controladas’’. (DEMO, 2000, p. 25) “Questionar,
+					entretanto, não é apenas resmungar contra, falar mal, desvalorizar,
+					mas articular discurso com consistência lógica e capaz de
+					convencer.” (PRODANOV, 2013, P.16)</p>
+
+			</div>
+		</div>
+	</div>
+	<br />
+
+	<div class="linha">
+		<div class="coluna lateral">
+			<br />
+		</div>
+		<div class="coluna principal ">
+			<p>Para que um texto, ou até um discurso, possa ser reconhecido
+				como científico, precisa ser lógico, sistemático, coerente,
+				sobretudo, bem-argumentado. Vejamos algumas características da
+				Ciência (Prodanov, 2013, p. 17-20):</p>
+		</div>
+	</div>
+
+	<div class="linha">
+		<div class="coluna lateral">
+			<br />
+		</div>
+		<div class="coluna principal">
+			<div class="abas ui-tabs ui-widget ui-widget-content ui-corner-all">
+				<ul
+					class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
+					<li
+						class="ui-state-default ui-corner-top ui-tabs-selected ui-state-active"><a
+						href="#aba04"><span>Ítem (a)</span></a></li>
+					<li class="ui-state-default ui-corner-top"><a href="#aba05"><span>Ítem
+								(b)</span></a></li>
+					<li class="ui-state-default ui-corner-top"><a href="#aba06"><span>Ítem
+								(c)</span></a></li>
+					<li class="ui-state-default ui-corner-top"><a href="#aba07"><span>Ítem
+								(d)</span></a></li>
+					<li class="ui-state-default ui-corner-top"><a href="#aba08"><span>Ítem
+								(e)</span></a></li>
+					<li class="ui-state-default ui-corner-top"><a href="#aba09"><span>Ítem
+								(f)</span></a></li>
+				</ul>
+
+				<div class="ui-tabs-panel ui-widget-content ui-corner-bottom"
+					id="aba04">
+					<h3>A) objeto de estudo bem-definido e de natureza empírica</h3>
+					<p>Delimitação e descrição objetiva e eficiente da realidade
+						observável, isto é, daquilo que pretendemos estudar, analisar,
+						interpretar ou verificar por meio de métodos empíricos;</p>
+				</div>
+				<div
+					class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide"
+					id="aba05">
+					<h3>B) objetivação</h3>
+					<p>Tentativa de conhecer a realidade tal como é, evitando
+						contaminá-la com ideologia, valores, opiniões ou preconceitos do
+						pesquisador;</p>
+
+				</div>
+				<div
+					class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide"
+					id="aba06">
+					<h3>c) observação controlada dos fenômenos</h3>
+					<p>Preocupação em controlar a qualidade do dado e o processo
+						utilizado para sua obtenção;</p>
+
+				</div>
+				<div
+					class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide"
+					id="aba07">
+					<h3>d)coerência</h3>
+					<p>Argumentação lógica, bem-estruturada, sem contradições;
+						critério mais propriamente lógico e formal, significando a
+						ausência de contradição no texto, fluência entre premissas e
+						conclusões, texto bem-tecido como peça de pano sem rasgos, dobras,
+						buracos;</p>
+
+				</div>
+				<div
+					class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide"
+					id="aba08">
+					<h3>E)consistência</h3>
+					<p>Base sólida, “refere-se à capacidade do texto de resistir à
+						contra argumentação ou, pelo menos, merecer o respeito de opiniões
+						contrárias; em certa medida, fazer ciência é saber argumentar, não
+						só como técnica de domínio lógico, mas sobretudo como arte
+						reconstrutiva.”;</p>
+
+				</div>
+				<div
+					class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide"
+					id="aba09">
+					<h3>F)linguagem precisa</h3>
+					<p>Sentido exato das palavras, restringindo ao máximo o uso de
+						adjetivos.</p>
+
+				</div>
+
+
+
+			</div>
+		</div>
+	</div>
+	<br />
+
+
+
+
+	<div class="linha">
+		<div class="coluna lateral">
+			<img src="imagens/01/exclamacao.png" />
+		</div>
+		<div class="coluna principal ">
+			<div class="destaque">
+				<p>***relevância social: Segundo Demo (2000), é frequente a
+					queixa de que, na universidade, estudamos teorias irrelevantes,
+					cuja sofisticação, por vezes, é diretamente proporcional à sua
+					inutilidade na vida.</p>
+			</div>
+			<br />
+			<p>Dessa forma, muitos autores afirmam que:</p>
+		</div>
+	</div>
+	<div class="linha">
+		<div class="coluna lateral">
+			<img src="imagens/01/pensar.png" />
+		</div>
+		<div class="coluna principal ">
+			<div class="destaque">
+				<p>“A CIÊNCIA É APENAS SENSO COMUM TREINADO E ORGANIZADO.”
+					(Thomas Huxley)</p>
+			</div>
+			<br />
+			<p>Vejamos uma tabela diferenciando Conhecimento Científico e
+				Conhecimento popular:</p>
+			<br /> <img src="imagens/01/tabconhecimento.png" />
+			<h4 align="center">Imagem: Prodanov, 2013, p. 23</h4>
+		</div>
+	</div>
+
+	<div class="linha">
+		<div id="rodape">
+			<ul id="rodape_navegacao">
+				<li><a href="#topo" title="Retornar ao topo da página">Topo</a></li>
+				<li><a href="orientacoes.html"
+					title="Ir para o Tópico Anterior">Tópico Anterior</a></li>
+				<li><a href="02.html" title="Ir para o Próximo Tópico">Próximo
+						Tópico</a></li>
+
+				<li><a href="pdf/01.pdf" title="Versão para Impressão"
+					target="_blank">Versão para Impressão</a></li>
+			</ul>
+			<a href="http://www.virtual.ufc.br" target="_blank" id="logo-ufcv"
+				class="logo"><img src="layout/logo-ufc_virtual-color.png"
+				alt="Logo UFC" width="40" height="40" /></a> <a
+				href="http://www.ufc.br" target="_blank" id="logo-ufc" class="logo"><img
+				src="layout/logo-ufc-color.png" alt="Logo UFC Virtual" width="35"
+				height="45" /></a>
+			<p>Responsável: Professora Nidia Barone</p>
+			<p>Universidade Federal do Ceará - Instituto UFC Virtual</p>
+		</div>
+	</div>
+	<script type="text/javascript">
+swfobject.registerObject("FlashID");
+    </script>
+</body>
+</html>

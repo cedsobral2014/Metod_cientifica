@@ -1,0 +1,488 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Metodologia da Pesquisa Científica</title>
+<link href="css/impressao.css" type="text/css" rel="stylesheet"
+	media="print" />
+<link href="css/grid.css" type="text/css" rel="stylesheet"
+	media="screen" />
+<link href="css/vtip.css" type="text/css" rel="stylesheet"
+	media="screen" />
+<link href="js/fancybox/jquery.fancybox-1.3.4.css" type="text/css"
+	rel="stylesheet" media="screen" />
+<link href="css/smoothness/jquery-ui-1.8.11.custom.css" type="text/css"
+	rel="stylesheet" media="screen" />
+<link href="css/layout.css" type="text/css" rel="stylesheet"
+	media="screen" />
+<link href="css/tema.css" type="text/css" rel="stylesheet"
+	media="screen" />
+<link href="css/formularios.css" type="text/css" rel="stylesheet"
+	media="screen" />
+
+<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.12.custom.min.js"></script>
+<script type="text/javascript"
+	src="js/fancybox/jquery.fancybox-1.3.4.js"></script>
+<script type="text/javascript" src="js/jquery.scrollTo-min.js"></script>
+<script type="text/javascript" src="js/jquery.serialScroll-min.js"></script>
+<script type="text/javascript" src="js/jquery.coda-slider-2.0.js"></script>
+<script type="text/javascript" src="js/ufc.js"></script>
+<script type="text/javascript" src="js/vtip.js"></script>
+<script type="text/javascript" src="js/fluidtextresizer.js"></script>
+<script type="text/javascript" src="js/jquery.simpleSlide_min.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+<script type="text/javascript" src="js/jquery.jcarousel.autoscroll.js"></script>
+<script type="text/javascript" src="flash/jwplayer/jwplayer.html5.js"></script>
+<script type="text/javascript" src="flash/jwplayer/jwplayer.js"></script>
+<script src="js/jcanvas.min.js" language="javascript"></script>
+<script src="js/criarCanvas.js" language="javascript"></script>
+<script src="js/animarBaloes.js" language="javascript"></script>
+<script src="js/f1.js" language="javascript"></script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function() {
+
+	});
+	var redimensionarFonte = new fluidtextresizer({
+		controlsdiv : "sizecontroldiv", //id of special div containing your resize controls. Enter "" if not defined
+		targets : [ "p", "li", "h1", "h2", "h3", "tr", ".slideshow" ], //.generic p, li, .quadro p, h2, h3 - target elements to resize text within: ["selector1", "selector2", etc]
+		levels : 1, //number of levels users can magnify (or shrink) text
+		persist : "none", //enter "session" or "none"
+		animate : 200
+	//animation duration of text resize. Enter 0 to disable
+	})
+</script>
+<style type="text/css" media="screen">
+</style>
+<!--[if IE 7]>
+	<style type="text/css" media="screen">
+		#nav > li > ul > li {
+			margin-left:-15px;
+			width:230px;
+		}
+		.audio-player-toolbar > button {
+			float:left;
+			display:block;
+			background-color:white;
+		}
+		.audio-progressbar {
+			width:100px !important;
+			display:block;
+			float:left;
+			margin-left:5px;
+			margin-top:2px;
+		}
+	</style>
+	<![endif]-->
+</head>
+<body>
+	<div class="linha" id="cabecalho">
+		<div class="titulos">
+			<h1 style="font-style: italic;">A Química no nosso dia a dia</h1>
+
+		</div>
+	</div>
+	<div class="linha" id="navegacao">
+		<ul id="nav" class="coluna lateral">
+			<li id="nav-menu"><a href="#"><img
+					src="layout/menu-menu.png" width="20" height="20" alt="Menu" /></a>
+				<ul>
+					<li><a href="orientacoes.html">Orientações de Navegação</a></li>
+					<li><a href="01.html">Apresentação</a></li>
+					<li><a href="02.html">Tópico 01: Introdução</a></li>
+					<li><a href="03.html">Tópico 02: Ciência</a></li>
+					<li><a href="04.html">Tópico 03: O Método Científico</a></li>
+					<li><a href="05.html">Tópico 04: Atividades</a></li>
+
+				</ul></li>
+			<li><a href="03.html"><img
+					src="layout/menu-anterior.png" width="20" height="20"
+					alt="Tópico Anterior" title="Tópico Anterior" class="mouseover" /></a></li>
+			<li><a href="05.html"><img src="layout/menu-proximo.png"
+					width="20" height="20" alt="Próximo Tópico" title="Próximo Tópico"
+					class="mouseover" /></a></li>
+			<li><a
+				href="javascript:redimensionarFonte.setFontLevel('smaller')"><img
+					src="layout/menu-fonte_reduzir.png" width="20" height="20"
+					alt="Reduzir Fonte" title="Reduzir Fonte" class="mouseover" /></a></li>
+			<li><a
+				href="javascript:redimensionarFonte.setFontLevel('bigger')"><img
+					src="layout/menu-fonte_aumentar.png" width="20" height="20"
+					alt="Aumentar Fonte" title="Aumentar Fonte" class="mouseover" /></a></li>
+			<li><a href="#" id="menu_constrate"><img
+					src="layout/menu-contraste.png" width="20" height="20"
+					alt="Contraste" title="Contraste" class="mouseover" /></a></li>
+
+			<li><a href="pdf/01.pdf" target="_blank"><img
+					src="layout/menu-impressao.png" width="20" height="20"
+					alt="Versão para Impressão" title="Versão para Impressão"
+					class="mouseover" /></a></li>
+		</ul>
+		<div id="topico" class="coluna principal">
+			<h2>Tópico 03: A sociedade e a química</h2>
+		</div>
+	</div>
+
+	<br />
+	<!-- TÓPICO 3 - O MÉTODO CIENTÍFICO -->
+
+	<div class="linha">
+		<div class="coluna lateral">
+			<br />
+		</div>
+		<div class="coluna principal ">
+			<h2>Tópico: O Método Científico</h2>
+			<p>Método científico é o conjunto de processos ou operações
+				mentais que devemos empregar na investigação. É a linha de
+				raciocínio adotada no processo de pesquisa.</p>
+
+		</div>
+	</div>
+	<div class="linha">
+		<div class="coluna lateral">
+			<img src="imagens/01/filme.png" />
+		</div>
+		<div class="coluna principal ">
+			<div class="destaque">
+
+				<p>Assistam ao vídeo sobre a Revolução Científica e entendam a
+					evolução dos métodos científicos na Ciência:
+					https://www.youtube.com/watch?v=5WjZ0X_lBeU</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="linha">
+		<div class="coluna lateral">
+			<br />
+		</div>
+		<div class="coluna principal ">
+			<p>A importância dos métodos na pesquisa é indiscutível. Com a
+				sistematização da pesquisa, esta se torna apreciável pela comunidade
+				científica. Os métodos são divididos em métodos de abordagem e
+				métodos de procedimento.</p>
+			<br />
+			<h2>Métodos de abordagem (gerais)</h2>
+			<p>São métodos gerais, que possibilitam ao pesquisador decidir
+				acerca do alcance de sua investigação, das regras de explicação dos
+				fatos e da validade de suas generalizações.</p>
+			<br /> <br />
+			<p>Podem ser dedutivo, indutivo, hipotético-dedutivo, dialético e
+				fenomenológico.</p>
+		</div>
+	</div>
+
+	<div class="linha">
+		<div class="coluna lateral">
+			<br />
+		</div>
+		<div class="coluna principal ">
+			<h2>EFEITO DEGRADÊ:INÍCIO DO EFEITO:</h2>
+			<p style="text-indent: 0em">
+				a)Dedutivo: Parte de teorias e leis mais gerais para a ocorrência de
+				fenômenos particulares. <br /> * "P1:Todos os homens são mortais“ →
+				premissa maior<br /> * "P2:Sócrates é homem Logo, z é y“ → premissa
+				menor<br /> * "Logo, Sócrates é mortal (Logo, z é y)“ → conclusão<br />
+				<br />
+				<br /> b) Indutivo: Caminha para planos cada vez mais abrangentes,
+				indo das constatações mais particulares às leis e teorias mais
+				gerais.<br /> * Antônio é mortal<br /> * Carlos é mortal<br /> *
+				Antônio e Carlos são homens<br /> * Todo homem é mortal<br />
+			</p>
+		</div>
+	</div>
+
+
+
+
+	<div class="linha">
+		<div class="coluna lateral">
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br /> <img src="imagens/01/textbox.png" />
+		</div>
+		<div class="coluna principal ">
+			<img src="imagens/01/leiseteorias.png" /><br />
+			<br /> <img src="imagens/01/particulariza_generaliza.png" /> <br />
+			<br />
+			<p>c) Hipotético-dedutivo: Problemas → hipóteses formuladas →
+				consequencias a serem testadas</p>
+		</div>
+	</div>
+
+
+	<div class="linha">
+		<div class="coluna lateral"></div>
+		<div class="coluna principal "></div>
+	</div>
+
+
+
+
+	<div class="linha">
+		<div class="coluna lateral">
+			<img src="imagens/01/v.png" />
+		</div>
+		<div class="coluna principal ">
+			<div class="destaque">
+				<p>“Enquanto no método dedutivo se procura a todo custo
+					confirmar a hipótese, no método hipotético-dedutivo, ao contrário,
+					procuram-se evidências empíricas para derrubá-la.” (GIL, 1999,
+					p.30)</p>
+			</div>
+			<p>Problema → Conjecturas → Dedução de consequências observadas →
+				Tentativa de falseamento → Corroboração</p>
+		</div>
+	</div>
+
+
+	<div class="linha">
+		<div class="coluna lateral">
+			<img src="imagens/01/filme.png" />
+		</div>
+		<div class="coluna principal ">
+			<div class="destaque">
+				<p>Assistam o vídeo: https://www.youtube.com/watch?v=B8YK-zmLaZA</p>
+			</div>
+			<br />
+
+			<p>1 Resposta: Dedutivo</p>
+		</div>
+	</div>
+
+
+
+
+	<div class="linha">
+		<div class="coluna lateral">
+			<img src="imagens/01/pergunta.png" />
+		</div>
+		<div class="coluna principal ">
+			<div class="destaque">
+				<p style="text-indent: 0em">
+					VOCÊ SABE O QUE É EMPIRISMO?<br /> “Em um modo filosófico,
+					empirismo é uma doutrina que se baseia na experiência,
+					exclusivamente, como única (ou principal) fonte de conhecimentos..
+
+					Na ciência, o empirismo é normalmente utilizado quando falamos no
+					método científico tradicional (que é originário do empirismo
+					filosófico), o qual defende que as teorias científicas devem ser
+					baseadas na observação do mundo, em vez da intuição ou fé.”<br />
+					<br /> Fonte: http://www.dicionarioinformal.com.br/empirismo/
+				</p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="linha">
+		<div class="coluna lateral">
+			<br />
+		</div>
+		<div class="coluna principal ">
+			<p style="text-indent: 0em">d) Dialético:</p>
+			<br />
+			<br />
+			<p>Método de interpretação dinâmica e totalizante da realidade.
+				Considera que os fatos não podem ser considerados fora de um
+				contexto social, político, econômico etc. Pesquisa qualitativa.</p>
+			<br />
+			<br />
+
+			<p>Empregado em pesquisa qualitativa, é um método de
+				interpretação dinâmica e totalizante da realidade, pois considera
+				que os fatos não podem ser relevados fora de um contexto social,
+				político, econômico etc.</p>
+		</div>
+	</div>
+
+
+
+	<div class="linha">
+		<div class="coluna lateral">
+			<img src="imagens/01/autofalante.png" />
+		</div>
+		<div class="coluna principal ">
+			<div class="destaque">
+				<h2>EFEITO: POST IT POSTIT_SCROL - INÍCIO DO EFEITO</h2>
+				<p>“[...] a dialética fornece as bases para uma interpretação
+					dinâmica e totalizante da realidade, uma vez que estabelece que os
+					fatos sociais não podem ser entendidos quando considerados
+					isoladamente, abstraídos de suas influências políticas, econômicas,
+					culturais etc.” Gil (2008, p. 14)</p>
+				<H2>FIM DO EFEITO</H2>
+			</div>
+		</div>
+	</div>
+
+	<div class="linha">
+		<div class="coluna lateral">
+			<br />
+		</div>
+		<div class="coluna principal ">
+			<h4>Bordenave e Pereira (Bordenave J, Pereira A. A estratégia de
+				ensino aprendizagem. 26ª ed. Petrópolis: Vozes; 2005. [ Links ] 48.
+				Bordenave JED. Alguns fatores pedagógicos. In: Santana JP, Castro
+				JL, organizadores. Capacitação em Desenvolvimento de Recursos
+				Humanos - CADRHU. Natal: Ministério da Saúde/Organização
+				Pan-Americana da Saúde/ Editora da UFRN; 1999. p.261-268) utilizam o
+				diagrama, denominado Método do Arco por Charles Maguerez, para
+				representá-lo, o qual é constituído pelos seguintes movimentos:
+				observação da realidade, pontos-chave, teorização, hipóteses de
+				solução e aplicação a realidade.</h4>
+		</div>
+	</div>
+	<br />
+	<br />
+	<br />
+
+	<div class="linha">
+		<div class="coluna lateral">
+			<br />
+		</div>
+		<div class="coluna principal ">
+			<img src="imagens/01/teorizacao.png" />
+			<h4 align="center">Imagem:
+				http://www.scielo.br/scielo.php?script=sci_arttext&pid=S1413-81232008000900018&lng=en&nrm=iso</h4>
+			<br />
+			<br />
+			<h4>MITRE, Sandra Minardi et al . Metodologias ativas de
+				ensino-aprendizagem naformação profissional em saúde: debates
+				atuais. Ciênc. saúde coletiva, Rio de Janeiro, v. 13, supl. 2, Dec.
+				2008. Available from
+				&lt;http://www.scielo.br/scielo.php?script=sci_arttext&amp;pid=S1413-81232008000900018&amp;lng=en&amp;nrm=iso&gt;.
+				access on 28 Oct. 2014.
+				http://dx.doi.org/10.1590/S1413-81232008000900018.</h4>
+		</div>
+	</div>
+
+	<div class="linha">
+		<div class="coluna lateral">
+			<br />
+		</div>
+		<div class="coluna principal ">
+			<p>e) Fenomenológico:</p>
+			<br />
+			<p>
+				Limita-se aos aspectos essenciais e intrínsecos do fenômeno, sem
+				lançar mão de deduções ou empirismos. Visa apenas o dado, o
+				fenômeno, não importando sua natureza real ou fictícia.<br />
+				<br /> O mundo aparece como fenômeno. O mundo não é a sua
+				existência, ou seja, a sua realidade factual, e sim, o seu sentido,
+				a consciência deste mundo, a consciência constitutiva do sentido do
+				mundo.<br />
+				<br /> A fenomenologia tende a abranger cientificamente a
+				UNIVERSALIDADE de todos os seres, realizando plenamente s ideia de
+				uma Filosofia universal<br />
+				<br /> HUSSERL apud ASTI-VERA (1980, p.62) afirmava que, "se um
+				conhecimento positivo é entendido como absolutamente isento de
+				pré-juízos e baseado exclusivamente no dado, então o método
+				fenomenológico é o único estritamente científico e positivo".<br />
+				<br /> Esse método tem como objeto de investigação o fenômeno, ou
+				seja, o que se mostra a si e em si mesmo
+			</p>
+		</div>
+	</div>
+
+	<div class="linha">
+		<div class="coluna lateral">
+			<br />
+		</div>
+		<div class="coluna principal ">
+			<div class="citacao_abnt">
+				<p>Esse método tem como objeto de investigação o fenômeno, ou
+					seja, o que se mostra a si e em si mesmo tal como é. Como principal
+					instrumento de conhecimento, o método adota a intuição, uma vez
+					que, segundo Husserl, as essências são dadas intuitivamente. Esta
+					intuição pode ser compreendida como uma visão intelectual do objeto
+					do conhecimento, onde visão significa uma forma de consciência na
+					qual se dá originariamente algo - é o fundamento último de todas as
+					afirmações racionais.
+					(http://www.regeusp.com.br/arquivos/C11-art05.pdf)</p>
+			</div>
+			<p>Desta feita, “... as investigações fenomenológicas mostram a
+				consciência do sujeito, através dos relatos de suas experiências
+				internas, e trata de viver em sua consciência - por empatia - os
+				fenômenos relatados pelo outro.", segundo ASTI-VERA, (1980, p.71).</p>
+		</div>
+	</div>
+
+	<div class="linha">
+		<div class="coluna lateral">
+			<br />
+		</div>
+		<div class="coluna principal ">
+
+			<p>FENOMENOLOGIA é a Ciência que se aplica aos FENÔMENOS. Estes
+				são a manifestação da realidade, dos fatos. Descreve a realidade.</p>
+			<br />
+			<p>A aplicação do método fenomenológico no campo da pesquisa
+				ressalta o interesse do pesquisador nos significados atribuídos
+				pelos sujeitos entrevistados às percepções que eles têm daquilo que
+				está sendo investigado.
+				(http://www.maxwell.vrac.puc-rio.br/11321/11321_6.PDF)</p>
+
+		</div>
+	</div>
+
+	<div class="linha">
+		<div class="coluna lateral">
+			<img src="imagens/01/exclamacao.png" />
+		</div>
+		<div class="coluna principal ">
+			<div class="destaque">
+				<p>Exemplo:</p>
+			</div>
+			<p>Uma cadeira é sempre uma cadeira, independe de suas qualidades
+				e funções que a diferencia das demais cadeiras.</p>
+			<br />
+			<br /> <img src="imagens/01/cadeira.png" /><br />
+			<br /> <img src="imagens/01/cadeira2.png" />
+
+		</div>
+	</div>
+
+	<div class="linha">
+		<div class="coluna lateral">
+			<img src="imagens/01/v.png" />
+		</div>
+		<div class="coluna principal ">
+			<div class="destaque">
+				<p>“A CIÊNCIA É APENAS SENSO COMUM TREINADO E ORGANIZADO.”
+					(Thomas Huxley)</p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="linha">
+		<div id="rodape">
+			<ul id="rodape_navegacao">
+				<li><a href="#topo" title="Retornar ao topo da página">Topo</a></li>
+				<li><a href="orientacoes.html"
+					title="Ir para o Tópico Anterior">Tópico Anterior</a></li>
+				<li><a href="02.html" title="Ir para o Próximo Tópico">Próximo
+						Tópico</a></li>
+
+				<li><a href="pdf/01.pdf" title="Versão para Impressão"
+					target="_blank">Versão para Impressão</a></li>
+			</ul>
+			<a href="http://www.virtual.ufc.br" target="_blank" id="logo-ufcv"
+				class="logo"><img src="layout/logo-ufc_virtual-color.png"
+				alt="Logo UFC" width="40" height="40" /></a> <a
+				href="http://www.ufc.br" target="_blank" id="logo-ufc" class="logo"><img
+				src="layout/logo-ufc-color.png" alt="Logo UFC Virtual" width="35"
+				height="45" /></a>
+			<p>Responsável: Professora Nidia Barone</p>
+			<p>Universidade Federal do Ceará - Instituto UFC Virtual</p>
+		</div>
+	</div>
+	<script type="text/javascript">
+swfobject.registerObject("FlashID");
+    </script>
+</body>
+</html>
