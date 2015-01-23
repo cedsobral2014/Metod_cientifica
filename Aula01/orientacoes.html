@@ -1,0 +1,349 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Conteudista em EaD para a SEFAZ</title>
+	<link href="css/impressao.css" type="text/css" rel="stylesheet" media="print" />
+	<link href="css/grid.css" type="text/css" rel="stylesheet" media="screen" />
+	<link href="css/vtip.css" type="text/css" rel="stylesheet" media="screen" />
+	<link href="js/fancybox/jquery.fancybox-1.3.4.css" type="text/css" rel="stylesheet"  media="screen" />
+	<link href="css/smoothness/jquery-ui-1.8.11.custom.css" type="text/css" rel="stylesheet" media="screen" />
+	<link href="css/layout.css" type="text/css" rel="stylesheet" media="screen" />
+	<link href="css/tema.css" type="text/css" rel="stylesheet" media="screen" />
+	
+	<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>	
+	<script type="text/javascript" src="js/jquery-ui-1.8.12.custom.min.js"></script>
+	<script type="text/javascript" src="js/fancybox/jquery.fancybox-1.3.4.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollTo-min.js"></script>
+	<script type="text/javascript" src="js/jquery.serialScroll-min.js"></script>
+	<script type="text/javascript" src="js/jquery.coda-slider-2.0.js"></script>
+	<script type="text/javascript" src="js/ufc.js"></script>
+	<script type="text/javascript" src="js/vtip.js"></script>
+	<script type="text/javascript" src="js/fluidtextresizer.js"></script>
+	<script type="text/javascript" src="js/jquery.simpleSlide_min.js"></script>
+	<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+	<script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+    <script type="text/javascript" src="js/jquery.jcarousel.autoscroll.js"></script>
+    <script src="js/jcanvas.min.js" language="javascript"></script>
+	<script src="js/criarCanvas.js" language="javascript"></script>
+    <script src="js/animarBaloes.js" language="javascript"></script>
+    <script src="js/videohtml5.js" language="javascript"></script>
+    
+	<script type="text/javascript" charset="utf-8">
+		$(document).ready(function(){
+			$("#audio-1").audioBotao({
+				arquivo : './audio/02/exemplo.mp3',
+				play : 'Ouvir',
+				pause : 'Pausar'
+			});
+			$("#audio-2").audioBotao({
+				arquivo : './audio/02/exemplo.mp3',
+				play : 'Ouvir',
+				pause : 'Pausar'
+			});
+			$("#audio-3").audioBotao({
+				arquivo : './audio/02/exemplo.mp3',
+				play : 'Ouvir',
+				pause : 'Pausar'
+			});
+			$("#audio-4").audioBotao({
+				arquivo : './audio/02/exemplo.mp3',
+				play : 'Ouvir',
+				pause : 'Pausar'
+			})
+		});
+		var redimensionarFonte = new fluidtextresizer({
+			controlsdiv: "sizecontroldiv", //id of special div containing your resize controls. Enter "" if not defined
+			targets: ["p", "li", "h1", "h2", "h3", "tr",".slideshow"], //.generic p, li, .quadro p, h2, h3 - target elements to resize text within: ["selector1", "selector2", etc]
+			levels: 1, //number of levels users can magnify (or shrink) text
+			persist: "none", //enter "session" or "none"
+			animate: 200 //animation duration of text resize. Enter 0 to disable
+		})
+	</script>
+	<style type="text/css" media="screen">
+		
+	</style>
+	<!--[if IE 7]>
+	<style type="text/css" media="screen">
+		#nav > li > ul > li {
+			margin-left:-15px;
+			width:230px;
+		}
+		.audio-player-toolbar > button {
+			float:left;
+			display:block;
+			background-color:white;
+		}
+		.audio-progressbar {
+			width:100px !important;
+			display:block;
+			float:left;
+			margin-left:5px;
+			margin-top:2px;
+		}
+	</style>
+	<![endif]-->
+</head>
+<body>
+	<a name="topo"></a>
+	<div class="linha" id="cabecalho">
+		<div class="titulos">
+			<h1>Formação de Professor Conteudista em EaD para a SEFAZ</h1>
+			<h2>Aula 01: Planejamento</h2>
+		</div>
+	</div>
+	<div class="linha" id="navegacao">
+		<ul id="nav" class="coluna lateral">
+			<li id="nav-menu"><a href="#"><img src="layout/menu-menu.png" width="20" height="20" alt="Menu" /></a>
+				<ul>
+					<li><a href="orientacoes.html">Orientações de Navegação</a></li>
+					<li><a href="01.html">Tópico 01: Apresentação</a></li>
+                    <li><a href="02.html">Tópico 02: Contexto histórico</a></li>
+                    <li><a href="03.html">Tópico 03: Agenda e o Fluxo de Processo para a produção de aulas</a></li>
+				</ul>
+			</li>
+			<li><a href="01.html"><img src="layout/menu-proximo.png" width="20" height="20" alt="Próximo Tópico" title="Próximo Tópico" class="mouseover"/></a></li>
+			<li><a href="javascript:redimensionarFonte.setFontLevel('smaller')"><img src="layout/menu-fonte_reduzir.png" width="20" height="20" alt="Reduzir Fonte" title="Reduzir Fonte" class="mouseover" /></a></li>
+			<li><a href="javascript:redimensionarFonte.setFontLevel('bigger')"><img src="layout/menu-fonte_aumentar.png" width="20" height="20" alt="Aumentar Fonte" title="Aumentar Fonte" class="mouseover" /></a></li>
+			<li><a href="#" id="menu_constrate"><img src="layout/menu-contraste.png" width="20" height="20" alt="Contraste" title="Contraste" class="mouseover" /></a></li>
+		</ul>
+		<div id="topico" class="coluna principal">
+			<h2>Orientações gerais</h2>
+		</div>
+	</div>
+	 <div class="linha">
+			<div class="coluna lateral">
+				<br /></div>
+		  <div class="coluna principal">
+        
+        <!-- Início -->
+          <h1>Orientações técnicas</h1>
+<p>Aqui serão fornecidas algumas orientações de natureza técnica para que você possa explorar o material deste curso.</p>
+<p>A primeira coisa a se fazer, é escolher o navegador a ser utilizado.  Veja a seguir alguns deles:</p>
+
+<!--inicio porta retrato novo-->			<div class="centralizado">
+              <table width="600px">
+              	<tr>
+                	<td>
+               	    	<img src="imagens/orientacoes/Internet-Explorer-icon.png" width="110" height="110" class="mouseover" title="Internet Explorer. Compatível com Windows 7, 2000, XP e Vista" />
+                    </td>
+                	<td>
+                    	<img src="imagens/orientacoes/Firefox-icon.png" width="110" height="110" class="mouseover" title="Mozilla Firefox. Compatível com Windows 7, 2000, XP e Vista" />
+                    </td>
+                	<td>
+                    	<img src="imagens/orientacoes/Google-Chrome-icon.png" width="110" height="110" class="mouseover" title="Google Chrome. Compatível com Windows 7, 2000, XP e Vista" />
+                    </td>
+                	<td>
+                    	<img src="imagens/orientacoes/Opera-icon.png" width="110" height="110" class="mouseover" title="Opera. Compatível com Windows 7, 2000, XP e Vista" />
+                    </td>
+                	<td>
+                    	<img src="imagens/orientacoes/Safari-icon.png" width="108" height="108" class="mouseover" title="Safari. Compatível com Windows 7, 2000, XP e Vista" />
+                    </td>                                                                                                    
+                </tr>
+              </table>           	  
+            </div><!--fim portA RETRATO NOVO-->
+
+          
+		   <!-- FIM -->
+           <br />
+           <p>A escolha pelo navegador é feita levando em consideração dois motivos:</p>
+          
+           
+            <!--INICIO TABELA-->
+       <table class="tabela">
+				<tr>
+					<td>1) Familiaridade que o usuário tem com o navegador</td>
+				</tr>
+				<tr>
+					<td>2) Performance</td>
+				</tr>
+			</table>
+		<!--FIM TABELA-->
+<p>Para saber mais sobre cada um dos navegadores apresentados, <a href="http://www.tecmundo.com.br/navegador/1915-qual-o-melhor-navegador-o-baixaki-fez-a-analise-.htm" target="_blank">clique aqui</a>!</p> 
+<h1> Orientações para o uso da plataforma</h1>
+<p> Caso este seja o seu primeiro acesso à plataforma MOODLE, clique nas setas do quadro abaixo para visualizar as imagens explicativas sobre os recursos deste ambiente digital de ensino e sobre as aulas  à distância:</p>
+<div class="jcarousel-skin-default skin-scroll-fotos">
+                    <div class="jcarousel scroll-fotos">
+                        <ul> 
+                        <!---->
+                        <li>
+                        <p>Recursos do ambiente moodle</p>
+						 <p style="font-size:18px">Na "aba atividade" que se encontra na parte lateral esquerda de sua tela. Clique em Recursos.</p>		   
+               	    	  <img src="imagens/orientacoes/moodle01.png" width="800" height="93" />
+                        </li>
+                        
+                        <li>
+                        	   <table>
+                                	<tr>
+                                    	<td>
+											<p style="font-size:18px;">Em seguida clique no título da aula que você deseja acessar. Uma nova janela será aberta com o conteúdo a aula.</p> 
+                           	    	    	<img src="imagens/orientacoes/moodle02.png" width="1335" height="72" />
+                                        </td>
+                                    </tr>
+                                </table> 
+                                   	    	
+
+                          </li>
+                        
+                        <!---->
+                                                    
+                        	<li>
+                            <p>Recursos das aulas</p>
+								<table>
+                                	<tr>
+                                    	<td>    
+                                   	    	<img src="imagens/orientacoes/01.png" width="446" height="116" />
+                                        </td>
+                                    </tr>
+                                </table>                                								
+								 <p>Este espaço indica o nome da Disciplina.</p>
+                          </li>
+                             <li>
+								<table>
+                                	<tr>
+                                    	<td>
+                                        	<img src="imagens/orientacoes/02.png" width="446" height="116" />                                        </td>
+                                    </tr>
+                                </table>                                								
+								 <p>Este espaço indica o nome da Aula.</p>
+                             </li>
+							 <li>
+								<table>
+                                	<tr>
+                                    	<td>
+										    <img src="imagens/orientacoes/03.png" width="446" height="116" />
+                                        </td>
+                                    </tr>
+                                </table>                                								
+								 <p>Este espaço indica o nome do Tópico Atual.</p>
+                             </li>
+                             <li>
+								<table>
+                                	<tr>
+                                    	<td>
+                                   	    	<img src="imagens/orientacoes/04.png" width="258" height="102" />
+                                        </td>
+                                    </tr>
+                                </table>                                								
+								 <p>Nesta área localizam-se os botões de navegação da aula.</p>
+                             </li>
+                             
+                             <li>
+                             	<table>
+                                	<tr>
+                                    	<td>
+                               		    	<img src="imagens/orientacoes/05.png" width="258" height="102" />
+                                        </td>
+                                        <td>
+                                        	Este botão é utilizado para navegar o tópico específico.
+                                        </td>
+                                    </tr>
+                                	<tr>
+                                    	<td>
+                                   	    	<img src="imagens/orientacoes/06.png" width="258" height="102" />
+                                        </td>
+                                        <td>
+                                        	Estes botões são utilizados para avançar e retroceder os tópicos da aula.
+                                        </td>
+                                    </tr>                                    
+                                </table>	
+                             </li>
+                             
+                        	<li>
+                            	<table>
+                                	<tr>
+                                    	<td>
+                                   	    	<img src="imagens/orientacoes/08.png" width="258" height="102" />
+                                        </td>
+                                        <td>
+                                        	Este botão aumenta a fonte da página.
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                    	<td>
+                               		    	<img src="imagens/orientacoes/07.png" width="258" height="102" />
+
+                                        </td>
+                                        <td>
+                                        	Este botão diminui a fonte da página.
+                                        </td>
+                                    </tr>
+                                </table>								
+                          </li>
+                             <li>
+                            	<table>
+                                	<tr>
+                                    	<td>
+                                   	    	<img src="imagens/orientacoes/09.png" width="258" height="102" />
+                                        </td>
+                                        <td>
+                                        	Este botão habilita visualização em alto contraste.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                    	<td>
+                           	    	    	<img src="imagens/orientacoes/10.png" width="263" height="109" />
+                                        </td>
+                                    	<td>
+                                       		Este botão realiza download de uma versão para impressão do tópico, em formato PDF.
+                                        </td>                                       
+                                    </tr>
+                                </table>								
+                             </li>
+                              <li>
+                            	<table>
+                                	<tr>
+                                    	<td valign="top">
+                                        	<p>Para navegar no conteúdo da aula utilize a barra de rolagem</p>
+                                        </td>
+                                    	<td>
+                                   	    	<img src="imagens/orientacoes/navbar.png" width="40" height="350" />
+                                        </td>                                        
+                                    </tr>                                    
+                                </table>								
+                             </li>
+                        	<li>
+                                <p>Támbem existe uma barra de navegação auxiliar na área de rodapé.</p>
+                                <div class="centralizado"><img src="imagens/orientacoes/11.png" width="947" height="40" /></div>
+                          </li>                                                          
+                    	</ul>
+                   <span id="atual_scroll"> 1/99 </span>
+                      <a href="#" id="voltar-scroll"><div id="voltar-scroll-container"></div></a>
+                        <a href="#" id="proximo-scroll"><div id="proximo-scroll-container"></div></a> 
+                    </div>
+            </div>
+
+<p>
+		Caso seu navegador esteja com a restrição de segurança ativada, alguns recursos utilizados nesta aula não serão corretamente visualizados. Para contornar este problema, clique na barra de controle de segurança (ver figura 1); em seguida, escolha a opção que permite a execução de scripts e pop-ups. Para isto, clique no botão SIM (ver figura 2)
+	</p>
+        
+        <img src="imagens/orientacoes/aviso_js-01.gif" width="600" height="106" >
+				<p class="legenda">Figura 1</p>
+				<img src="imagens/orientacoes/aviso_js-02.gif" class="imagem_inline">
+				<p class="legenda">Figura 2</p>
+        
+       	  </div>
+		</div>
+	<div class="linha">
+		<div id="rodape">
+			<ul id="rodape_navegacao">
+				<li><a href="#topo" title="Retornar ao topo da página">Topo</a></li>
+				<li><a href="01.html" title="Ir para o Próximo Tópico">Próximo Tópico</a></li>
+				
+			</ul>
+			<a href="http://www.virtual.ufc.br" target="_blank" id="logo-ufcv" class="logo"><img src="layout/logo-ufc_virtual-color.png" alt="Logo UFC" width="40" height="40"  /></a>
+			<a href="http://www.ufc.br" target="_blank" id="logo-ufc" class="logo"><img src="layout/logo-ufc-color.png" alt="Logo UFC Virtual" width="35" height="45" /></a>
+			<p>Responsável: Professora Nidia Barone</p>
+			<p>Universidade Federal do Ceará - Instituto UFC Virtual</p>
+		</div>
+	</div>
+<!-- script temporario de heatmap -->
+<script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName('script')[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/7277.js";
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+</body>
+</html>
