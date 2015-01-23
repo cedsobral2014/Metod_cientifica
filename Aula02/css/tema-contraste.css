@@ -1,0 +1,437 @@
+/*-------------------------------------------+
+|                                            |
+|                   GRID                     |
+|                                            |
++-------------------------------------------*/
+.principal {
+  border-top-color: #666666;
+}
+#navegacao > .grid_3a {
+  /*background-color:#000;*/
+
+}
+/*-------------------------------------------+
+|                                            |
+|            MAIN STRUCTURE STYLES           |
+|                                            |
++-------------------------------------------*/
+body {
+  color: yellow;
+  /*background-color:lighten(@tom_claro, 5%);*/
+
+  background: url(../layout/background-920-sombra-contraste.png) top center repeat-y;
+  background-color: #666666;
+}
+/*-------------------------------------------+
+|                                            |
+|             GENERAL HEAD STYLES            |
+|                                            |
++-------------------------------------------*/
+.principal h1 {
+  border-bottom-color: green;
+}
+.coluna.total > h2 {
+  border-bottom-color: green;
+}
+/*-------------------------------------------+
+|                                            |
+|                FONT STYLES                 |
+|                                            |
++-------------------------------------------*/
+.legenda {
+  /*background-color:@tom_claro;*/
+
+  font-size: 1.3em;
+  border: 1px solid green;
+}
+/*-------------------------------------------+
+|                                            |
+|                LINK STYLES                 |
+|                                            |
++-------------------------------------------*/
+p a, li a {
+  color: #53FF6F;
+  border-bottom-color: #53ff6f;
+}
+p a:hover,
+li a:hover,
+a:hover,
+h2 a:hover,
+h3 a:hover,
+span.mouseover:hover {
+  border-bottom-color: transparent;
+  background-color: blue;
+  color: #fff !important;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  /* for Safari */
+
+  border-radius: 5px;
+}
+h1 a {
+  color: green;
+}
+/*-------------------------------------------+
+|                                            |
+|               IMAGE STYLES                 |
+|                                            |
++-------------------------------------------*/
+.alinhar_esquerda img, .alinhar_direita img {
+  border-color: yellow;
+}
+img.imagem_inline, img.imagem_lateral, img.imagem_lateral_grande {
+  border-color: yellow;
+}
+.seletor img {
+  border-color: yellow;
+}
+/*-------------------------------------------+
+|                                            |
+|                CABEÇALHO                   |
+|                                            |
++-------------------------------------------*/
+#cabecalho {
+  border-bottom-color: #000;
+}
+#navegacao {
+  color: #fff;
+}
+#navegacao {
+  background-color: green;
+  border-bottom-color: #000;
+}
+#navegacao > #topico {
+  background-color: green;
+}
+/*-------------------------------------------+
+|                                            |
+|                  RODAPE                    |
+|                                            |
++-------------------------------------------*/
+#rodape {
+  font-size: 1.2em;
+  background-color: #000;
+}
+#rodape_navegacao, #rodape_navegacao a, #rodape_navegacao > li:hover {
+  color: yellow;
+}
+#rodape_navegacao {
+  background-color: green;
+}
+#rodape_navegacao > li:hover {
+  background-color: blue;
+  border-bottom-color: #ffffff;
+}
+.logo {
+  opacity: 1.0;
+}
+/*-------------------------------------------+
+|                                            |
+|                  QUADRO                    |
+|                                            |
++-------------------------------------------*/
+.quadro {
+  border-left-color: green;
+  background-color: none;
+  border-right: 2px solid green;
+  border-top: 2px solid green;
+  border-bottom: 2px solid green;
+}
+.quadro_imagem {
+  height: 60px;
+}
+.quadro_imagem img {
+  background-color: #000;
+  border-top: 2px solid green;
+  border-bottom: 2px solid green;
+  border-left: 2px solid green;
+}
+/*-------------------------------------------+
+|                                            |
+|                  DESTAQUE                  |
+|                                            |
++-------------------------------------------*/
+.destaque {
+  background-color: none;
+  /* tom amarelo de destaque: ffffcc */
+
+  border: 2px solid green;
+}
+/*-------------------------------------------+
+|                                            |
+|              FOLHA CADERNO                 |
+|                                            |
++-------------------------------------------*/
+.folha_caderno {
+  background: url(../layout/caderno-background-contraste.jpg) top left repeat-y;
+}
+/*-------------------------------------------+
+|                                            |
+|                  POST IT                   |
+|                                            |
++-------------------------------------------*/
+div.post_it {
+  background: none;
+  border: 2px solid green;
+}
+div.post_it_cabecalho {
+  display: none;
+}
+div.post_it p {
+  color: yellow;
+  padding-top: 1em;
+}
+/*-------------------------------------------+
+|                                            |
+|                   MENU                     |
+|                                            |
++-------------------------------------------*/
+#nav a {
+  color: white;
+}
+#nav li:hover {
+  color: white;
+  background: blue;
+  border-bottom-color: white;
+}
+#nav ul li:hover {
+  border-bottom-color: white !important;
+}
+#nav ul {
+  background: green;
+}
+/*-------------------------------------------+
+|                                            |
+|            RETRATIL E FLUTUANTE            |
+|                                            |
++-------------------------------------------*/
+.retratil, .flutuante {
+  border-width: 2px;
+  border-color: green;
+}
+.retratil_ativar {
+  border-bottom-color: #53ff6f;
+}
+.descricao {
+  background-color: none;
+  border: 2px dashed green;
+  width: 96.5%;
+  color: #000000;
+}
+a.retratil_ativar, .flutuante > h3 > a, .descricao > h3 > a {
+  color: #53ff6f;
+}
+.quadro > div.retratil {
+  background-color: none;
+  border: 2px dashed green;
+}
+#fancybox-content {
+  border-color: #000000;
+  background-color: #000000;
+}
+/*-------------------------------------------+
+|                                            |
+|                  CONTENT                   |
+|                                            |
++-------------------------------------------*/
+.divisoria {
+  border-top-color: yellow;
+}
+/*-------------------------------------------+
+|                                            |
+|             TABELA DESTACADA               |
+|                                            |
++-------------------------------------------*/
+table.tabela {
+  background-color: none;
+  border-color: green;
+}
+.tabela tr:hover {
+  background-color: green !important;
+  color: white !important;
+}
+.tabela tr th {
+  background-color: green;
+  color: white;
+  border-color: green;
+}
+.tabela tr td {
+  border-color: green;
+}
+.tabela-cor {
+  background-color: none;
+}
+/*-------------------------------------------+
+|                                            |
+|                TABELA AUDIO                |
+|                                            |
++-------------------------------------------*/
+.tabela_audio td {
+  border-color: green;
+}
+.tabela_audio tr:nth-child(even) {
+  background-color: none;
+}
+/*-------------------------------------------+
+|                                            |
+|                   FLASH                    |
+|                                            |
++-------------------------------------------*/
+.flash {
+  background-color: yellow;
+  border: 2px solid green;
+  width: 98.5%;
+}
+/*-------------------------------------------+
+|                                            |
+|                 PLAYERS                    |
+|                                            |
++-------------------------------------------*/
+.player_video {
+  background-color: none;
+  border: 2px solid green;
+  width: 98.5%;
+}
+/*-------------------------------------------+
+|                                            |
+|                  SLIDE                     |
+|                                            |
++-------------------------------------------*/
+.simpleSlide-window {
+  border-color: green;
+  background-color: none;
+}
+.simpleSlide-controles {
+  border-color: yellow;
+  background-color: none;
+}
+.left-button, .right-button {
+  color: #53ff6f;
+}
+.simpleSlide-slide h1 {
+  border-bottom-color: yellow;
+}
+.simpleSlide-slide p {
+  color: yellow;
+}
+.simpleSlide-slide form, .simpleSlide-slide form > input {
+  color: yellow;
+}
+.simpleSlideStatus-tray {
+  border-color: #888;
+}
+.left-button:hover, .right-button:hover {
+  background-color: blue;
+  border-bottom-color: #53ff6f;
+}
+/*-------------------------------------------+
+|                                            |
+|                 SELETOR                    |
+|                                            |
++-------------------------------------------*/
+.seletor-conteudo {
+  border-color: green;
+  background-color: none;
+}
+.seletor-navegacao {
+  color: yellow;
+  background-color: green;
+  border-right-color: green;
+}
+.seletor-navegacao > ul > li {
+  border-bottom-color: #000;
+}
+.seletor-navegacao > ul > li:hover {
+  background-color: blue;
+  color: #ffffff;
+}
+.seletor-navegacao .seletor-item-ativo {
+  background-color: blue;
+  color: yellow;
+  border-color: #000;
+  border-right-color: #000000;
+}
+/*-------------------------------------------+
+|                                            |
+|                ACCORDION                   |
+|                                            |
++-------------------------------------------*/
+.sanfona .ui-accordion-header.ui-state-active, .sanfona .ui-accordion-header {
+  background: none !important;
+  border-color: green !important;
+}
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-tabs,
+.ui-widget-header {
+  background: none;
+  background-color: none;
+  border: 1px solid green !important;
+}
+.ui-tabs-nav .ui-state-default {
+  background-color: green;
+}
+.ui-tabs-nav .ui-state-default a {
+  color: yellow;
+}
+.ui-tabs-nav .ui-state-active {
+  background-color: blue;
+}
+.ui-tabs-nav .ui-state-active a {
+  color: white;
+}
+.ui-state-hover, .ui-tabs-nav .ui-state-hover {
+  background-color: blue !important;
+  border: 1px solid blue;
+  color: #ffffff;
+}
+.ui-state-active {
+  border: 1px solid green;
+}
+.ui-widget-header, .ui-accordion-content {
+  background: none;
+  background-color: none;
+  /* antes era tom_medio */
+
+  color: yellow;
+}
+.ui-widget-content {
+  border: 1px solid green;
+  color: yellow;
+}
+.ui-widget-content a {
+  color: #53ff6f;
+}
+.ui-accordion .ui-accordion-header a {
+  color: #53ff6f;
+  font-size: 1.1em;
+}
+.ui-state-default.ui-state-hover a, .ui-state-default.ui-state-hover a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+.ui-state-default.ui-state-hover .ui-icon {
+  background-image: url(smoothness/images/ui-icons_ffffff_256x240.png);
+}
+.ui-tabs .ui-tabs-nav .ui-state-default {
+  background-color: none;
+}
+.ui-tabs .ui-tabs-nav .ui-tabs-selected {
+  background-color: none;
+}
+.ui-tabs .ui-tabs-nav li {
+  font-size: 1.1em !important;
+  font-variant: small-caps;
+}
+.ui-tabs .ui-tabs-nav li a {
+  padding: 0.3em 0.5em;
+}
+/*-------------------------------------------+
+|                                            |
+|                  TOOLTIP                   |
+|                                            |
++-------------------------------------------*/
+p#vtip {
+  color: #000000 !important;
+}

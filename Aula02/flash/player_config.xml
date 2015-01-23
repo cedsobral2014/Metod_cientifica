@@ -1,0 +1,11 @@
+<config>
+	<repeat>false</repeat>
+	<autostart>false</autostart>
+	<backcolor>ffffff</backcolor>
+	<volume>85</volume>
+	<playlist>none</playlist>
+	<controlbar>bottom</controlbar>
+	<stretching>exactfit</stretching>
+	<fullscreen>false</fullscreen>
+	<captions.fontsize>18</captions.fontsize>
+</config>
