@@ -1,0 +1,91 @@
+/* INICIO DO CSS DO SLIDE */
+/* #setting_up, #features, #more-uses, #troubleshooting, #wordpress {
+	width: 560px;
+} */
+
+
+
+/* 
+.slideshow div {
+	margin: auto;
+}
+*/
+
+.simpleSlide-controles {
+	z-index: 2;
+	margin: 0 auto;
+	border: 1px solid #888;
+	border-top: none;
+	text-align: center;
+	height: 20px;
+	-webkit-border-radius: 0 0 5px 5px;
+	-moz-border-radius: 0 0 5px 5px;
+	border-radius:0 0 5px 5px;
+	padding-top: 3px;
+	background-color: #888;
+}
+
+.left-button, .right-button {
+	color: white;
+	text-align: center;
+	cursor: pointer;
+}
+
+.left-button {
+	position: relative;
+	float: left;
+	left: 10px;
+//	background-color: red;
+}
+
+.right-button {
+	position: relative;
+	float: right;
+	right: 10px;
+//	background-color: green;
+}
+
+.slide_headline {
+	color:black;
+	font-size:46px;
+	font-weight:bold;
+	letter-spacing:-0.04em;
+	padding: 5px;
+}
+	
+.slide_texto {
+	color:black;
+	line-height: 22px;
+	padding: 5px;
+}
+
+.simpleSlideStatus-tray {
+	z-index: 3;
+	padding: 0px;
+	margin-top: 2px !important;
+	border: 1px solid #888;
+	height: 10px !important;
+	margin: 0 auto;
+}
+
+.simpleSlideStatus-window {
+	z-index: 5;
+	height: 10px !important;
+}
+
+.slide_descricao {
+	z-index: 5;
+//	background-color: #888;
+//	opacity: 0.6;
+	height: 30px;
+	margin-top: -40px;
+	padding: 5px;
+	position: relative;
+	color: white;
+//	display: none;
+}
+
+.slide_descricao_transp {
+	opacity: 0.6;
+	background-color: #888;
+}

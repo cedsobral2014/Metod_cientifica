@@ -1,0 +1,797 @@
+/* RESET */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {  
+	margin:0; 
+	padding:0;
+	text-align:justify; 
+} 
+
+/*ABAS ROTATIVA*/
+.abas-rotativas li, .proxima-aba, .voltar-aba{
+	display:none;
+	}
+/*FIM ABAS*/
+
+/* IMAGENS ROTATIVAS */
+.scroll-circular ul{
+	display:block;
+	list-style:none;	
+	}
+.skin-grande img{
+	width:570px;
+  	height:400px;
+	margin:0px;
+	padding:0px;
+	}
+.skin-pequeno img{
+	width: 280px;
+  	height: 240px;
+	margin: 0px;
+	padding:0px;
+	}
+/* FIM */
+
+table { 
+	border-collapse:collapse; 
+	border-spacing:0; 
+} 
+fieldset,img {  
+	border:0; 
+} 
+address,caption,cite,code,dfn,em,strong,th,var { 
+	font-style:normal; 
+	font-weight:normal; 
+} 
+ol,ul { 
+	list-style:none; 
+} 
+caption,th { 
+	text-align:left; 
+} 
+h1,h2,q,h4,h5,h6 { 
+	font-size:100%; 
+	font-weight:normal; 
+} 
+q:before,q:after { 
+	content:''; 
+} 
+abbr,acronym {
+	border:0; 
+}
+a {
+	border-top:none;
+	border-right:none;
+	border-left:none;
+}
+/*---------- END RESET ----------*/
+
+/* margens das paginas */
+@page {
+	widows:3;
+	orphans:3;
+}
+@page :left {
+	margin-top: 2.0cm;
+	margin-bottom: 1.5cm;
+	margin-left: 2.0cm;
+	margin-right: 2.0cm;
+}
+@page :right {
+	margin-top: 2.0cm;
+	margin-bottom: 1.5cm;
+	margin-left: 2.0cm;
+	margin-right: 2.0cm;
+}
+
+/* GRID DO LAYOUT */
+.total {
+	width:100%;
+	margin:0 !important;
+}
+.lateral {
+	width:250px;
+	margin:0 !important;
+	
+}
+.principal {
+	width:635px;
+	padding-left:15px;
+	margin:0px !important;
+}
+.coluna {
+	margin:0 !important;
+	float:left;
+	display:inline;
+}
+.linha {
+	width:900px;
+	margin:0 auto;
+	overflow:hidden;
+}
+
+/*-------------------------------------------+
+|                                            |
+|            MAIN STRUCTURE STYLES           |
+|                                            |
++-------------------------------------------*/
+html {
+	font-size:100%;
+	min-height:100%;
+}
+body {
+	font-size:100%;
+	font-family:Georgia, "Times New Roman", serif;
+}
+p {
+	margin:0 0 0.8em 0;
+	font-size:14pt;
+	line-height:1.5em;
+	text-indent: 2.0em;
+	/*text-align:justify;*/
+}
+span {
+	text-indent: 0;
+}
+
+/*-------------------------------------------+
+|                                            |
+|             GENERAL HEAD STYLES            |
+|                                            |
++-------------------------------------------*/
+h1 {
+	font-size:16pt;
+	margin-bottom:8px;
+	margin-top:10px;
+	font-variant:small-caps;
+	font-weight:bold;
+	border-bottom:3px solid #666;
+}
+.titulos h1 {
+	border-bottom:none;
+}
+h2 {
+	font-size:15pt;
+	font-variant:small-caps;
+	margin-bottom:12px;
+}
+h3 {
+	font-size:12pt;
+	margin-bottom:8px;
+	line-height:22px;
+	font-variant:small-caps;
+}
+h4 {
+	font-size:13pt;
+	margin-bottom:16px;
+	line-height:18px;
+	font-variant:small-caps;
+}
+
+/*-------------------------------------------+
+|                                            |
+|                FONT STYLES                 |
+|                                            |
++-------------------------------------------*/
+strong {
+	font-weight:bold;
+	font-variant:small-caps;
+}
+em {
+	font-style:italic;
+	font-weight:inherit;
+}
+blockquote p, .coluna.lateral *, .sem_recuo {
+  text-indent: 0;
+}
+.centralizado {
+  text-align: center;
+  text-indent: 0;
+}
+
+/*-------------------------------------------+
+|                                            |
+|                  CITACAO                   |
+|                                            |
++-------------------------------------------*/
+blockquote {
+	font-style:italic;
+	text-align:left;
+	margin-bottom:15px;
+}
+blockquote p {
+	font-size:1.1em;
+}
+blockquote .citacao_fonte {
+	text-align:right;
+	font-size:1.0em;
+	margin-bottom:0;
+}
+div.citacao_cabecalho {
+	display: block;
+	height: 1.8em;
+	background: transparent url(../layout/citacao_topo_esq.png) scroll no-repeat top left;
+}
+div.citacao_rodape {
+	display: block;
+	height: 1.8em;
+	background: transparent url(../layout/citacao_inferior_dir.png) scroll no-repeat bottom right;
+}
+
+/*-------------------------------------------+
+|                                            |
+|                LIST STYLES                 |
+|                                            |
++-------------------------------------------*/
+ul {
+	margin-bottom:15px;
+	list-style:square inside;
+}
+ul li {
+	font-size:13pt;
+	line-height:20px;
+	margin-bottom:5px;
+}
+li > ul {
+	list-style:circle;
+}
+li > ul, li > ol {
+	margin-bottom:0;
+	margin-left:20px;
+}
+li > ul li, li > ol li {
+	font-size:14pt;
+}
+ol {
+	margin-bottom:15px;
+	list-style:decimal inside;
+}
+ol li {
+	font-size:14pt;
+	/*line-height:15px;*/
+	line-height:18pt;
+}
+
+/*-------------------------------------------+
+|                                            |
+|                LINK STYLES                 |
+|                                            |
++-------------------------------------------*/
+p a, li a, span.mouseover {
+	text-decoration:none;
+	border-bottom-width:1px;
+	border-bottom-style:dashed;
+}
+a {
+	color:#000;
+}
+a[href$='.pdf']:after,a[href$='.doc']:after,a[href$='.xls']:after,a[href$='.ppt']:after,a[href$='.rar']:after,a[href$='.exe']:after {
+	content: " (Visite a aula online para realizar download deste arquivo.)"
+}
+#rodape a:after {
+	content:none;
+}
+span.mouseover:after {
+	content: " (" attr(title) ") ";
+}
+
+/*-------------------------------------------+
+|                                            |
+|               INPUT STYLES                 |
+|                                            |
++-------------------------------------------*/
+form {
+	font-size:14pt;
+	margin-bottom:10px;
+}
+input {
+	margin-bottom:15px;
+	padding-right:5px;
+}
+
+/*-------------------------------------------+
+|                                            |
+|               IMAGE STYLES                 |
+|                                            |
++-------------------------------------------*/
+.coluna.lateral img {
+	display: block;
+	font-size:1em;
+	padding:4px;
+	/*margin-top:0.3em;*/
+	height:auto;
+	max-width: 240px;
+	margin: 0 auto;
+}
+/* necessário para aulas de matematica, que possuem imagens inline no texto */
+.principal p img, .principal h2 img {
+	display: inline;
+	margin: 0 !important;
+	padding: 2px 0 0 0;
+	vertical-align: text-top;
+}
+.principal img {
+	max-width: 550px;
+	display: block;
+	margin:0 auto 1.2em auto !important;
+}
+.principal .legenda, .galeria_legenda {
+	margin-top:-1.0em;
+	font-size: 11pt;
+}
+.legenda {
+	font-size: 11pt;
+	border-bottom: none;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	text-indent: 0;
+}
+.legenda > a.flutuante_externo:after {
+	content:"Acesse a aula online e utilize o marcador disponível no final desta apostila";
+}
+
+.icone {
+	display: none !important;
+}
+
+/*-------------------------------------------+
+|                                            |
+|                 CABECALHO                  |
+|                                            |
++-------------------------------------------*/
+#cabecalho {
+	-webkit-print-color-adjust: exact;
+	width:100%;
+	background-color:#e8e8e8;
+	padding:10px;
+	font-variant:small-caps;
+}
+#cabecalho h1 {
+	font-size:15pt;
+	font-weight:bold;
+	margin-bottom:none;
+}
+#cabecalho h2 {
+	font-size:14pt;
+	margin-top:10px;
+	margin-bottom:0;
+}
+#navegacao {
+	width:100%;
+	margin-bottom:10px;
+}
+#navegacao #nav {
+	display:none;
+}
+#navegacao #topico {
+	-webkit-print-color-adjust: exact;
+	width:100%;
+	margin-right:55px;
+	background-color:#d5d5d5;
+	padding:10px;
+}
+#navegacao #topico h2 {
+	font-size:13pt;
+	margin-bottom:0;
+}
+
+/*-------------------------------------------+
+|                                            |
+|                 CONTEUDO                   |
+|                                            |
++-------------------------------------------*/
+
+
+/*-------------------------------------------+
+|                                            |
+|                  QUADRO                    |
+|                                            |
++-------------------------------------------*/
+.quadro_imagem {
+	margin-right:0px;
+	height:55px;
+}
+.coluna.lateral.quadro_imagem img {
+	-webkit-print-color-adjust: exact;
+	border:none;
+	width: auto;
+	margin:0;
+	float:right;
+	background-color:#666;
+	padding:6px;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+}
+.quadro h2 {
+	margin-bottom:15px;
+	font-variant:small-caps;
+}
+.quadro h3 {
+	margin-bottom:15px;
+	font-weight:none;
+}
+.quadro {
+	-webkit-print-color-adjust: exact;
+	margin-left:0px;
+	margin-right:0px;
+	padding:15px 15px 0 15px;
+	border-left:5px solid #666;
+	min-height:40px;
+	width:615px;
+	background-color:#e8e8e8;
+	margin-bottom:15px !important;
+}
+
+/*-------------------------------------------+
+|                                            |
+|                  DESTAQUE                  |
+|                                            |
++-------------------------------------------*/
+.destaque {
+	padding:15px 9px 0 9px;
+	margin:0 auto 15px auto;
+	background-color:#e8e8e8;
+}
+.destaque p {
+	margin-bottom:0;
+	padding-bottom:15px;
+}
+
+/*-------------------------------------------+
+|                                            |
+|            RETRATIL E FLUTUANTE            |
+|                                            |
++-------------------------------------------*/
+.retratil, .flutuante {
+	padding:10px;
+	margin-bottom:15px;
+	border:1px dashed #666;
+}
+.retratil_conteudo {
+	margin-left:20px;
+	padding-right:10px;
+	margin-top:10px;
+	display:block;
+}
+.retratil > h3, .flutuante > h3 {
+	margin-bottom:0;
+}
+a.retratil_ativar, .flutuante > h3 > a {
+	text-decoration:none;
+	color:inherit;
+}
+.retratil_ativar > img, .flutuante_ativar > img, .flutuante_externo > img {
+	vertical-align:bottom;
+	padding:0;
+	margin:0 12px 2px 0;
+}
+.flutuante_conteudo {
+	/*width:632px;*/
+	margin-bottom:15px;
+	padding:10px 20px 0px 20px;
+	border:1px dashed #666666;
+}
+.flutuante .flutuante_conteudo {
+	border:none;
+}
+.flutuante_conteudo h3 {
+	margin-bottom:15px;
+}
+.flutuante_conteudo > p {
+	line-height:1.5em;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.flutuante_ativar img, .flutuante_externo img {
+	margin:0;
+	padding:0 3px 5px 4px;
+}
+
+/*-------------------------------------------+
+|                                            |
+|             TABELA DESTACADA               |
+|                                            |
++-------------------------------------------*/
+table.tabela{
+	width:100%;
+	background-color:#e8e8e8;
+	margin-bottom:1.8em;
+	border:0.2em solid #e8e8e8;
+}
+.tabela tr {
+	font-size:1.2em;
+}
+.tabela th, .tabela td {
+	padding:0.6em;
+	font-size:14pt !important;
+}
+.tabela tr th{
+	background-color:#666;
+	font-weight:bold;
+	color:white;
+	text-align:center;
+	border:0.2em solid #666;
+}
+.tabela-cor{
+	background-color:white;
+}
+
+/*-------------------------------------------+
+|                                            |
+|              TABELA CRÉDITOS               |
+|                                            |
++-------------------------------------------*/
+.creditos td {
+	vertical-align:top;
+}
+
+/*-------------------------------------------+
+|                                            |
+|                 DESCRICAO                  |
+|                                            |
++-------------------------------------------*/
+.descricao {
+	margin-bottom:0;
+	text-align:left;
+}
+.descricao > h3 {
+	margin-bottom:10px;
+}
+
+/*-------------------------------------------+
+|                                            |
+|                    ABAS                    |
+|                                            |
++-------------------------------------------*/
+.abas > ul {
+	display:none;
+}
+.abas .ui-tabs-panel h3 {
+	font-variant:small-caps;
+	border-bottom:1px solid #666;
+	margin-left:0;
+}
+.abas .ui-tabs-panel * {
+	margin-left:15px;
+}
+
+.ui-tabs-panel img {
+	display: flex;
+	margin:0 auto 0.3em auto !important;
+}
+
+/*-------------------------------------------+
+|                                            |
+|                   FLASH                    |
+|                                            |
++-------------------------------------------*/
+.flash {
+	width:100%;
+	margin-bottom:15px;
+	background-color:#e8e8e8;
+	border:2px solid #e8e8e8;
+	text-align:center;
+	padding-top:5px;
+}
+.flash object, .flash embed {
+	display:none;
+	/*padding:10px;*/
+}
+.flash_alt img {
+	margin:0;
+	padding:0;
+	border:1px solid black;
+}
+
+/*-------------------------------------------+
+|                                            |
+|                 SELETOR                    |
+|                                            |
++-------------------------------------------*/
+.seletor-navegacao > ul {
+	list-style:none;
+}
+.seletor-navegacao > ul > li {
+	font-variant:small-caps;
+}
+.seletor-navegacao > ul > li > div {
+	border-top:1px solid #666;
+	margin-top:3px;
+	padding-top:7px;
+	margin-left:20px;
+}
+.seletor-descricao img {
+	padding:10px;
+}
+.seletor-descricao > p {
+	font-variant:normal;
+}
+#seletor_default {
+	display:none;
+}
+
+/*-------------------------------------------+
+|                                            |
+|                   AUDIO                    |
+|                                            |
++-------------------------------------------*/
+div.audio {
+	display: none;
+}
+.audio_player:after{
+	content:'(Visite a aula online para ouvir este áudio)';
+}
+.audio-texto {
+  line-height: 1.0em;
+}
+
+/*-------------------------------------------+
+|                                            |
+|                  RODAPE                    |
+|                                            |
++-------------------------------------------*/
+#rodape {
+	width:100%;
+	margin-top:0px;
+	padding-top:4px;
+	word-spacing:2px;
+	text-align:center;
+	border-top:4px solid #666;
+}
+#rodape_navegacao {
+	display:none;
+}
+#rodape p {
+	font-size:11pt;
+	padding-bottom:2px;
+	margin-bottom:0;
+}
+#logo-ufcv {
+	float:right;
+}
+#logo-ufc {
+	float:left;
+}
+
+/*-------------------------------------------+
+|                                            |
+|                  SANFONA                   |
+|                                            |
++-------------------------------------------*/
+.sanfona > div > div {
+	display:block !important;
+	margin-left:15px;
+}
+
+/*CODA SLIDER*/
+.coda-slider-wrapper {
+	width:620px;
+	display:inline;
+}
+.coda-nav{
+	display:none;
+}
+.coda-slider .panel {
+	width: 100%;
+	float:left;
+}
+.coda-slider .panel-wrapper{
+	display:inline-block;
+	width:620px;
+}
+
+/*CODA SLIDER FIM*/
+
+/*PORTA-RETRATOR*/
+.galeria_container ul li{
+	list-style:none;
+}
+.galeria_container img{
+	margin-left:150px;
+	width:300px;
+	height:200px;
+}
+.portaretrato a.flutuante_galeria {
+	border: none;
+}
+.galeria_legenda{
+	display: block;
+	text-align:center;
+	width:auto;
+	padding-left:3px;
+	padding-right:3px;
+	padding-bottom:5px;
+	display:block;
+	color:#000;
+}
+/*FIM*/
+
+
+/*-------------------------------------------+
+|                                            |
+|               LINKS LIST                   |
+|                                            |
++-------------------------------------------*/
+
+
+#links_lista li {
+	word-wrap: break-word;
+}
+/*-------------------------------------------+
+|                                            |
+|               SCROLL FOTOS               |
+|                                            |
++-------------------------------------------*/
+.scroll-fotos ul{
+	max-width:586px;
+	display:block;
+	}
+.scroll-fotos li{
+	position:relative;
+	display:block;
+	}
+.scroll-fotos li img{
+	max-width: 550px;
+	display: block;
+	margin:0 auto 1.2em auto !important;
+	}
+#atual_scroll{
+	display:none;
+	}
+/*-------------------------------------------+
+|                                            |
+|               ABAS ROTATIVAS               |
+|                                            |
++-------------------------------------------*/
+.jcarousel-container-conteudo {
+	margin-left: 15px
+}
+.jcarousel-container-conteudo h3 {
+	font-variant:small-caps;
+	border-bottom:1px solid #666;
+	margin-left: -15px;
+}
+/**
+FIM ABAS ROTATIVAS
+**/
+
+/*-------------------------------------------+
+|                                            |
+|               ABAS EM FATIAS               |
+|                                            |
++-------------------------------------------*/
+.pizza canvas {
+	display: none;
+}
+.pizza .titulo_canvas {
+	display: none;
+}
+.pizza #conteudo-fechar {
+	display: none;
+}
+.pizza .conteudo_pizza {
+	margin-left: 15px;
+}
+.pizza .conteudo_pizza h3 {
+	font-variant:small-caps;
+	border-bottom:1px solid #666;
+	margin-left: -15px;
+}
+/**
+FIM ABAS EM FATIAS
+**/
+
+/**
+EFEITO TABLET
+**/
+
+.scroll-tablet-nav, .filter-start-tablet, .start-btn-tablet{
+	display:none;
+}
+.skin-scroll-tablet{
+	width:632px;
+	}
+
+.skin-scroll-tablet ul, .skin-scroll-tablet li{
+	list-style:none;
+	width:635px;
+	}
