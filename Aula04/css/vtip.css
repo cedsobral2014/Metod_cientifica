@@ -1,0 +1,19 @@
+p#vtip {
+	display: none;
+	position: absolute;
+	padding: 0.4em 0.7em; /* valores diferente para tentar deixar o espaçamento mais proporcional */
+	left: 5px;
+	font-size: 1.4em;
+	font-variant:small-caps;
+	background-color: white;
+	border: 1px solid #a6c9e2;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	z-index: 9999;
+}
+p#vtip #vtipArrow {
+	position: absolute;
+	top: -10px;
+	left: 5px;
+}
